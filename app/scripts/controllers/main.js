@@ -28,9 +28,9 @@ angular.module('meanMapApp')
 .controller("MainCtrl", [ '$scope', function($scope) {
     angular.extend($scope, {
         center: {
-            lat: 40.095,
-            lng: -3.823,
-            zoom: 4
+            lat: 36.9914, 
+            lng: -122.0609,
+            zoom: 15
         },
         defaults: {
             scrollWheelZoom: false
