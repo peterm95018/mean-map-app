@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui-leaflet'
   ])
   .config(function ($routeProvider) {
     $routeProvider

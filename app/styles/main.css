@@ -9,6 +9,33 @@ body {
   padding: 0;
 }
 
+
+html, body, .map-container-fluid, .map-row, .col-md-12 {
+	height: 100%;
+	width: 100%;
+}
+
+.map-container-fluid {
+padding-right: 30px;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+.angular-leaflet-map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #e3e1de;
+}
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
