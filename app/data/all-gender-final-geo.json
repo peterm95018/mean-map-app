@@ -1,0 +1,1004 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951294257",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Cook House 100B",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Cook House 100B",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.054467,
+          36.9789067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346733",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Communications 124B",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Communications 124B",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0612313,
+          37.0009284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346756",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Arboretum Horticulture 1 116",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Arboretum Horticulture 1 116",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0608295,
+          36.983678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346759",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Carriage House 112A",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Carriage House 112A",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0520021,
+          36.9799678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346783",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "College Nine Lounge",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "College Nine Lounge",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0576957,
+          37.0005954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346788",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Cantu Center 205",
+        "unisex": "yes",
+        "wheelchair": "limited",
+        "level": "0",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Cantu Center 205",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0539321,
+          37.0005123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346799",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Cowell Annex",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Cowell Annex",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0534721,
+          36.9966509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/1951346844",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "College 9 & 10 Community Room",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "College 9 & 10 Community Room",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0593571,
+          37.0022151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2045490944",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Kerr Hall 55",
+        "unisex": "yes",
+        "wheelchair": "limited",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Kerr Hall 55",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0618769,
+          36.9968395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2046799051",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Music Center 103",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Music Center 103",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0598794,
+          36.993186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2046990322",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Main Stage",
+        "unisex": "yes",
+        "wheelchair": "limited",
+        "level": "1",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Main Stage",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0625344,
+          36.9947542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2047602472",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Crown/Merrill Apartments Community Room",
+        "unisex": "yes",
+        "wheelchair": "limited",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Crown/Merrill Apartments Community Room",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0538069,
+          37.0016629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2047623290",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Kresge College Annex A",
+        "unisex": "yes",
+        "wheelchair": "limited",
+        "level": "0",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Kresge College Annex A",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0661222,
+          36.997234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2050564412",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Porter I Building",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Porter I Building",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0651963,
+          36.9965563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2050763624",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Crown College Admin Building 107",
+        "unisex": "yes",
+        "wheelchair": "no",
+        "level": "1",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Crown College Admin Building 107",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0548024,
+          37.0002449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2052353606",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Merrill Ming Ong Computer Lab 110",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Merrill Ming Ong Computer Lab 110",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0523572,
+          36.9997317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2052464358",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "College Nine Residential Hall Namaste Lounge",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "College Nine Residential Hall Namaste Lounge",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0571833,
+          37.0007966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053273557",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Emergency Response Center 109",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Emergency Response Center 109",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0519485,
+          36.9791823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053273572",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Barn G 128",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Barn G 128",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.052494,
+          36.9803914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053273584",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Campus Fleet Garage 102A",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Campus Fleet Garage 102A",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0532933,
+          36.9799628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053328005",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Merrill Faculty Office Annex",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Merrill Faculty Office Annex",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0535966,
+          36.9993697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053349300",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Cook House 100C",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Cook House 100C",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0544939,
+          36.9789078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053533297",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Graduate Student Housing",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Graduate Student Housing",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0645688,
+          36.9997898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053671130",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Communications 124C",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Communications 124C",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0613856,
+          37.0007083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053671145",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Jack Baskin Engineering Auditorium 103",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Jack Baskin Engineering Auditorium 103",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0622895,
+          37.0003333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053671152",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Jack Baskin Engineering 58",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Jack Baskin Engineering 58",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0630299,
+          37.0001488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053703201",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Physical Sciences Building 164",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Physical Sciences Building 164",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0618865,
+          36.999764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/2053703256",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Thimann Laboratories 481",
+        "unisex": "yes",
+        "wheelchair": "yes",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Thimann Laboratories 481",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0618053,
+          36.9981782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4075823815",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Emergency Response Center 111",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "Restrooms located in main floor lobby. <img src='http://foundation.ucsc.edu/about/images/ucsc%20entrance%20sign.jpg'",
+        "amenity_1": "",
+        "title": "Emergency Response Center 111",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0519587,
+          36.9791825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4075829246",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Cardiff House Women's Center 109",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Cardiff House Women's Center 109",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0514571,
+          36.9794207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076011973",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Crown College Admin Building 111",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Crown College Admin Building 111",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0548516,
+          37.0002524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076032287",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Agroecology Trailer 4 (Life Lab) 104",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "shower",
+        "title": "Agroecology Trailer 4 (Life Lab) 104",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0546973,
+          36.9834426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076034784",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Hahn Art Facility 2",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Hahn Art Facility 2",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0526119,
+          36.9979142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076037609",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Hahn Art Facility 3",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Hahn Art Facility 3",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0526307,
+          36.9979282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076040635",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Thimann Laboratories 468A",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Thimann Laboratories 468A",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0618097,
+          36.998067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076041575",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Arboretum Horticulture 2 104",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Arboretum Horticulture 2 104",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.060883,
+          36.983788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "@id": "node/4076042201",
+        "access": "yes",
+        "amenity": "toilets",
+        "name": "Arboretum Horticulture 2 105",
+        "unisex": "yes",
+        "wheelchair": "",
+        "level": "",
+        "description": "This shall be a block of HTML and may contain <b>descriptions</b> or photo images.",
+        "amenity_1": "",
+        "title": "Arboretum Horticulture 2 105",
+        "marker-color": "#7a81ff",
+        "marker-size": "medium",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0608481,
+          36.983788
+        ]
+      }
+    }
+  ]
+}

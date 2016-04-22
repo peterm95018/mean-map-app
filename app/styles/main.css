@@ -15,10 +15,11 @@ html, body, .map-container-fluid, .map-row, .col-md-12 {
 	width: 100%;
 }
 
+/* had to add 15px to this getting it to 30 to work */
 .map-container-fluid {
-padding-right: 30px;
-margin-right: auto;
-margin-left: auto;
+	padding-right: 30px;
+	margin-right: auto;
+	margin-left: auto;
 
 }
 
