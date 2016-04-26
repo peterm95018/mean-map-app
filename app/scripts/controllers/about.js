@@ -22,12 +22,18 @@ angular.module('meanMapApp')
                 lng: -122.0589681,
                 message: "McHenry Library",
                 focus: true,
-                draggable: false
-            }
-        },
+                draggable: false,
+                icon:  {
+                    type: 'awesomeMarker',
+                    icon: 'heart',
+                    markerColor: 'red'
+                    }
+                },
+            },
         defaults: {
             scrollWheelZoom: false
         }
+        
     });
 
   }]);
