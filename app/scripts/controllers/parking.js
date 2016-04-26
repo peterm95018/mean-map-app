@@ -24,24 +24,50 @@ angular.module('meanMapApp')
 		  maxZoom: 22
 		};
 
+		//var map = L.map('map');
 
-  // Get the countries geojson data
-  $http.get("data/parking.geojson").success(function(data, status) {
-   addGeoJsonLayerWithClustering(data);
-  });
+	  $http.get("data/bicycle-parking-cafe.geojson").success(function(data, status) {
+		var allstuff = L.geoJson(data);
 
-  function addGeoJsonLayerWithClustering(data) {
-      var markers = L.markerClusterGroup();
-      var geoJsonLayer = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-              layer.bindPopup(feature.properties.name);
-          }
-      });
-      markers.addLayer(geoJsonLayer);
-      leafletData.getMap().then(function(map) {
-        map.addLayer(markers);
-        map.fitBounds(markers.getBounds());
-      });
-  }
+		var bicycles = L.geoJson(data, {
+			filter: function(feature, layer) {
+				return feature.properties['marker-symbol'] == 'bicycle';
+			}
+  		});
+
+  		var cafes = L.geoJson(data, {
+  			filter: function(feature, layer) {
+  				return feature.properties['marker-symbol'] == 'cafe';
+  			}
+  		});
+
+  		// map.fitBounds(allstuff.getBounds(), {
+  		// 	padding: [50, 50]
+  		// });
+
+
+  		// bicycles.addTo(map);
+  		// cafes.addTo(map);
+
+  	});
+
+  // // Get the countries geojson data
+  // $http.get("data/bicycle-parking-cafe.geojson").success(function(data, status) {
+  //  addGeoJsonLayerWithClustering(data);
+  // });
+
+  // function addGeoJsonLayerWithClustering(data) {
+  //     var markers = L.markerClusterGroup();
+  //     var geoJsonLayer = L.geoJson(data, {
+  //         onEachFeature: function (feature, layer) {
+  //             layer.bindPopup(feature.properties.name);
+  //         }
+  //     });
+  //     markers.addLayer(geoJsonLayer);
+  //     leafletData.getMap().then(function(map) {
+  //       map.addLayer(markers);
+  //       map.fitBounds(markers.getBounds());
+  //     });
+  // }
 
   }]);
