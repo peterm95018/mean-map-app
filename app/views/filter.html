@@ -1,0 +1,17 @@
+<p>This is the filter view.</p>
+<style>
+.filter-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:100;
+  padding:10px;
+  border-radius:3px;
+  }
+</style>
+
+<nav id='filters' class='filter-ui'></nav>
+<div id="map" ng-controller="FilterCtrl">
+	<leaflet lf-center="center" defaults="defaults" markers="markers"></leaflet>
+</div>
