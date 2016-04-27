@@ -11,7 +11,7 @@ angular.module('meanMapApp')
 .controller('FilterCtrl',['$scope', '$http', 'leafletData', 
     function($scope, $http, leafletData) {
 
-  // Find and store a variable reference to the list of filters.
+// Find and store a variable reference to the list of filters.
 var filters = document.getElementById('filters');    
 
   angular.extend($scope, {
@@ -26,30 +26,36 @@ var filters = document.getElementById('filters');
         }
       });
 
-  // Get the countries geojson data
+  // Get the geojson data
   $http.get("data/bicycle-parking-cafe.geojson")
   	.success(function(data, status) {
-  		// function to add markers to layer and layer
-  		// to map
-   	addGeoJsonLayerWithClustering(data);
-  });
+		var features = data.features;
+  		var all_parking_cafes = L.geoJson(features);
+  	
+  	// create a variable based on filtering the geoJson on cafes
+  	var cafes = L.geoJson(data, {
+		filter: function(feature, layer) {
+			return feature.properties['marker-symbol'] == "cafe";
+		}
+  	});
 
-  function addGeoJsonLayerWithClustering(data) {
+	// create a variable based on filtering the geoJson on others
+  	var others = L.geoJson(data, {
+            filter: function(feature, layer) {
+                return feature.properties.BusType != "cafe";
+            }
+        });
+		
+		// here we can directly work on the map object
+  		leafletData.getMap().then(function(map) {
+  		var overlayMaps = {
+  			"Bicycles": others,
+  			"Cafes": cafes
+  		}
+  		L.control.layers(overlayMaps).addTo(map);
+		cafes.addTo(map);
+		others.addTo(map);
+      });	
+	}); // end promise
 
-      var markers = L.markerClusterGroup();
-      var geoJsonLayer = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-                // might be amenity, title, name or combo of fields
-              layer.bindPopup(feature.properties.title);
-          }
-      });
-
-      markers.addLayer(geoJsonLayer);
-
-      leafletData.getMap().then(function(map) {
-        map.addLayer(markers);
-        map.fitBounds(markers.getBounds());
-      });
- }
-			
 }]);
