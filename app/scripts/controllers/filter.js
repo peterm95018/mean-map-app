@@ -33,63 +33,60 @@ var filters = document.getElementById('filters');
 		iconColor: 'white'
 	});
 
-  // Get the geojson data
-  $http.get("data/bicycle-parking-cafe.geojson")
-  	.success(function(data, status) {
-	var allpoints = L.geoJson(data);
-  	
+	var bicycleIcon = L.AwesomeMarkers.icon({
+		prefix: 'fa',
+		icon: 'bicycle',
+		markerColor: 'blue',
+		iconColor: 'white'
+	});
 
+	$scope.map = null;
+	leafletData.getMap().then(function(map) {
+		$scope.map = map;
+});	
+
+
+  // Get the geojson data
+  $http.get("data/bicycle-parking-cafe.geojson").then(function(response, status) {
+	var data = response.data;
 
   	// create a variable based on filtering the geoJson on cafes
-  	var cafes = L.geoJson(data, {
+  	var cafesLayer = L.geoJson(data, {
 		filter: function(feature, layer) {
 			return feature.properties['marker-symbol'] == "cafe";
 		},
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: cafeIcon
-			// })
-			// .on('mouseover', function() {
-			// 	this.bindPopup(feature.properties.amenity).openPopup();
 			});
 		}
   	});
 
-
-
 	// create a variable based on filtering the geoJson on others
-  	var others = L.geoJson(data, {
+  	var bicycleParkingLayer = L.geoJson(data, {
             filter: function(feature, layer) {
-                return feature.properties.BusType != "cafe";
+                return feature.properties.amenity == "bicycle_parking";
+            },
+            pointToLayer: function(feature, latlng) {
+            	return L.marker(latlng, {
+            		icon: bicycleIcon
+            	});
             }
         });
 		
 
-		// here we can directly work on the map object
-  		leafletData.getMap().then(function(map) {
-			map.fitBounds(allpoints.getBounds(), {
-				padding: [50, 50]
-			});
-  			 cafes.addTo(map);
-  			 others.addTo(map);
+$scope.overlayMaps = {
+	"Cafes": cafesLayer,
+	"Bicycle Parking": bicycleParkingLayer
+};
 
-  			 // The JavaScript below is new
-        $("#others").click(function() {
-            map.addLayer(others)
-            map.removeLayer(cafes)
-        });
-        $("#cafes").click(function() {
-            map.addLayer(cafes)
-            map.removeLayer(others)
-        });
-        $("#allbus").click(function() {
-            map.addLayer(cafes)
-            map.addLayer(others)
-        });
-      });
+L.control.layers(null, $scope.overlayMaps).addTo($scope.map);
+},
+function myError(response) {
+	console.log(response.statusText);
 
 	}); // end promise
 
-
+	
 
 }]);
