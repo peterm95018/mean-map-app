@@ -26,18 +26,36 @@ var filters = document.getElementById('filters');
         }
       });
 
+	var cafeIcon = L.AwesomeMarkers.icon({
+		prefix: 'fa',
+		icon: 'coffee',
+		markerColor: 'red',
+		iconColor: 'white'
+	});
+
   // Get the geojson data
   $http.get("data/bicycle-parking-cafe.geojson")
   	.success(function(data, status) {
-		var features = data.features;
-  		var all_parking_cafes = L.geoJson(features);
+	var allpoints = L.geoJson(data);
   	
+
+
   	// create a variable based on filtering the geoJson on cafes
   	var cafes = L.geoJson(data, {
 		filter: function(feature, layer) {
 			return feature.properties['marker-symbol'] == "cafe";
+		},
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {
+				icon: cafeIcon
+			// })
+			// .on('mouseover', function() {
+			// 	this.bindPopup(feature.properties.amenity).openPopup();
+			});
 		}
   	});
+
+
 
 	// create a variable based on filtering the geoJson on others
   	var others = L.geoJson(data, {
@@ -46,16 +64,32 @@ var filters = document.getElementById('filters');
             }
         });
 		
+
 		// here we can directly work on the map object
   		leafletData.getMap().then(function(map) {
-  		var overlayMaps = {
-  			"Bicycles": others,
-  			"Cafes": cafes
-  		}
-  		L.control.layers(overlayMaps).addTo(map);
-		cafes.addTo(map);
-		others.addTo(map);
-      });	
+			map.fitBounds(allpoints.getBounds(), {
+				padding: [50, 50]
+			});
+  			 cafes.addTo(map);
+  			 others.addTo(map);
+
+  			 // The JavaScript below is new
+        $("#others").click(function() {
+            map.addLayer(others)
+            map.removeLayer(cafes)
+        });
+        $("#cafes").click(function() {
+            map.addLayer(cafes)
+            map.removeLayer(others)
+        });
+        $("#allbus").click(function() {
+            map.addLayer(cafes)
+            map.addLayer(others)
+        });
+      });
+
 	}); // end promise
+
+
 
 }]);
