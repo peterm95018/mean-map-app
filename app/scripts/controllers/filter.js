@@ -79,6 +79,7 @@ $scope.map = null;
             	});
             }
         });
+
 		
 
 $scope.overlayMaps = {
@@ -86,7 +87,13 @@ $scope.overlayMaps = {
 	"Bicycle Parking": bicycleParkingLayer
 };
 
+// Add objects to the map
 L.control.layers(null, $scope.overlayMaps).addTo($scope.map);
+  	// var markers = L.markerClusterGroup();
+  	// markers.addLayer(bicycleParkingLayer);
+  	// $scope.map.addLayer(markers);
+
+
 },
 function myError(response) {
 	console.log(response.statusText);

@@ -7,6 +7,8 @@
  * # meanMapApp
  *
  * Main module of the application.
+ * Note that $routeProvider entries with controller can cause 
+ * controller to fire twice causing odd behavior.
  */
 angular
   .module('meanMapApp', [
@@ -36,6 +38,15 @@ angular
         templateUrl: 'views/parking.html',
         controller: 'ParkingCtrl',
         controllerAs: 'parking'
+      })
+       .when('/filter', {
+        templateUrl: 'views/filter.html'
+      })
+        .when('/filtercluster', {
+        templateUrl: 'views/filtercluster.html'
+      })
+        .when('/markertest', {
+        templateUrl: 'views/markertest.html'
       })
       .otherwise({
         redirectTo: '/'
