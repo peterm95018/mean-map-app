@@ -40,7 +40,7 @@ var filters = document.getElementById('filters');
 		iconColor: 'white'
 	});
 
-	$scope.map = null;
+$scope.map = null;
 	leafletData.getMap().then(function(map) {
 		$scope.map = map;
 });	
@@ -55,6 +55,9 @@ var filters = document.getElementById('filters');
 		filter: function(feature, layer) {
 			return feature.properties['marker-symbol'] == "cafe";
 		},
+		onEachFeature: function (feature, layer) {
+              layer.bindPopup(feature.properties.name);
+          },
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {
 				icon: cafeIcon
@@ -67,6 +70,9 @@ var filters = document.getElementById('filters');
             filter: function(feature, layer) {
                 return feature.properties.amenity == "bicycle_parking";
             },
+            onEachFeature: function (feature, layer) {
+              layer.bindPopup(feature.properties.amenity);
+          },
             pointToLayer: function(feature, latlng) {
             	return L.marker(latlng, {
             		icon: bicycleIcon
