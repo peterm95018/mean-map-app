@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
   </head>
   <body ng-app="meanMapApp">
@@ -92,6 +92,15 @@
 								<li>
 									<a href="#/places">Places</a>
 								</li>
+								<li>
+									<a href="#/filter">Filter</a>
+								</li>
+								<li>
+									<a href="#/filtercluster">Filter Cluster</a>
+								</li>
+								<li>
+									<a href="#/markertest">Marker Test</a>
+								</li>
 								<li class="divider">
 								</li>
 								<li>
@@ -118,7 +127,7 @@
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Link</a>
+							<a href="#/filtercluster">FilterCluster</a>
 						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
@@ -205,6 +214,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
@@ -212,6 +222,8 @@
         <script src="scripts/controllers/academic.js"></script>
         <script src="scripts/controllers/parking.js"></script>
         <script src="scripts/controllers/filter.js"></script>
+        <script src="scripts/controllers/filtercluster.js"></script>
+        <script src="scripts/controllers/markertest.js"></script>
         <!-- endbuild -->
 </body>
 </html>
