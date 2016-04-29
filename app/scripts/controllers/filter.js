@@ -43,6 +43,7 @@ var filters = document.getElementById('filters');
 $scope.map = null;
 	leafletData.getMap().then(function(map) {
 		$scope.map = map;
+
 });	
 
 
@@ -51,6 +52,7 @@ $scope.map = null;
 	var data = response.data;
 
   	// create a variable based on filtering the geoJson on cafes
+    // addTo(map) puts it on the map and selects checkbox in control
   	var cafesLayer = L.geoJson(data, {
 		filter: function(feature, layer) {
 			return feature.properties['marker-symbol'] == "cafe";
@@ -63,7 +65,7 @@ $scope.map = null;
 				icon: cafeIcon
 			});
 		}
-  	});
+  	}).addTo($scope.map);
 
 	// create a variable based on filtering the geoJson on others
   	var bicycleParkingLayer = L.geoJson(data, {
@@ -88,10 +90,12 @@ $scope.overlayMaps = {
 };
 
 // Add objects to the map
-L.control.layers(null, $scope.overlayMaps).addTo($scope.map);
-  	// var markers = L.markerClusterGroup();
-  	// markers.addLayer(bicycleParkingLayer);
-  	// $scope.map.addLayer(markers);
+    // var markers = L.markerClusterGroup();
+    // markers.addLayer(bicycleParkingLayer);
+    // $scope.map.addLayer(markers);
+
+L.control.layers(null, $scope.overlayMaps, {collapsed:false}).addTo($scope.map);
+
 
 
 },
