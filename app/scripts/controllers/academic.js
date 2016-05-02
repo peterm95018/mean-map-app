@@ -10,38 +10,34 @@
 angular.module('meanMapApp')
 .controller('AcademicCtrl',['$scope', '$http', 'leafletData', function($scope, $http, leafletData){
   
-  var vm = this;
-  
-   vm.layers = {
-      baselayers: {
-          googleHybrid: {
-              name: 'Google Hybrid',
-              layerType: 'HYBRID',
-              type: 'google'
-          },
-          googleRoadmap: {
-              name: 'Google Streets',
-              layerType: 'ROADMAP',
-              type: 'google'
-          }
-      }
-  };
-  
-  vm.center = {
-  	lat: 36.9914, 
-  	lng: -122.0609,
-  	zoom: 14
-  }
+  angular.extend($scope, {
+        center: {
+          lat: 36.9914, 
+          lng: -122.0609,
+          zoom: 14
+        },
+        defaults: {
+          scrollWheelZoom: false,
+          maxZoom: 22
+        },
+        legend: {
+            position: 'topright',
+            colors: [ '#ff0000', '#28c9ff', '#0000ff', '#ecf386' ],
+            labels: [ 'National Cycle Route', 'Regional Cycle Route', 'Local Cycle Network', 'Cycleway' ]
+        }
+      });
 
-  vm.defaults = {
-      scrollWheelZoom: true,
-      maxZoom: 22
-  }
+$scope.map = null;
 
+leafletData.getMap().then(function(map) {
+  $scope.map = map;
+
+});
 
   // Get the countries geojson data
   $http.get("data/all-gender-final-geo.json").success(function(data, status) {
-   addGeoJsonLayerWithClustering(data)
+   addGeoJsonLayerWithClustering(data);
+   
   });
 
   function addGeoJsonLayerWithClustering(data) {
@@ -55,46 +51,11 @@ angular.module('meanMapApp')
       leafletData.getMap().then(function(map) {
         map.addLayer(markers);
         map.fitBounds(markers.getBounds());
+
+
       });
   }
+
+
 			
 		}]);
-
-
-
-
-
-
-  // .controller('AcademicCtrl', [ '$scope', '$http', function ($scope, $http) {
-
-
-  //           angular.extend($scope, {
-  //               center: {
-  //                   lat: 36.9914, 
-  //           		lng: -122.0609,
-  //                   zoom: 14
-  //               },
-  //               defaults: {
-  //               	scrollWheelZoom: false
-  //               }
-  //           });
-
-  //           $http.get("data/all-gender-final-geo.json").success(function(data) {
-  //                addGeoJsonLayerWithClustering(data);
-  //           });
-  			
-  // 			function addGeoJsonLayerWithClustering(data) {
-  //    		 var markers = L.markerClusterGroup();
-  //    		 var geoJsonLayer = L.geoJson(data, {
-  //         	onEachFeature: function (feature, layer) {
-  //             layer.bindPopup(feature.properties.popupContent);
-  //         }
-  //     });
-  //     markers.addLayer(geoJsonLayer);
-  //     leafletData.getMap().then(function(map) {
-  //       map.addLayer(markers);
-  //       map.fitBounds(markers.getBounds());
-  //     });
-
-
-  // }]);
