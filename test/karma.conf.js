@@ -37,6 +37,7 @@ module.exports = function(config) {
       'bower_components/leaflet/dist/leaflet-src.js',
       'bower_components/ui-leaflet/dist/ui-leaflet.js',
       'bower_components/leaflet.markercluster/dist/leaflet.markercluster-src.js',
+      'bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
