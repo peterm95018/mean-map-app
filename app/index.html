@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MEAN Map App</title>
+
+  <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, .map-container-fluid, .map-row, .col-md-12 {
+            height: 100%;
+            width: 100%;
+        }
+		#map {
+			width: auto;
+			height: 100%;
+			padding-top: 50px;
+		}
+    </style>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./styles/layout-mobile.css" media="all">
+<link rel="stylesheet" type="text/css" href="./styles/layout-desktop.css" media="all and (min-width: 800px)">
+</head>
+
+
+
+
+
+
+<body>
+<div id="page">
+<!-- Bootstrap navbar -->
+<div id="header-bar">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">UC Santa Cruz</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <!-- <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;POI List</a></li> -->
+
+            <li><a href="#">Link</a></li>
+
+<!--             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Directions <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#/drivingdirections">Driving</a></li>
+                  <li><a href="#/walkingdirections">Walking</a></li>
+              </ul>
+            </li> -->
+
+           <!--  <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Show Me <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/academic">Academic</a></li>
+                <li><a href="#/parking">Parking</a></li>
+                <li><a href="#/places">Places</a></li>
+                <li><a href="#/filter">Filter</a></li>
+                <li><a href="#/filtercluster">Filter Cluster</a></li>
+                <li><a href="#/markertest">Marker Cluster</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
+</div><!-- ./header-bar -->
+
+     
+<div id="sidebar-menu">
+	<div id="sidebar-menu-content">
+		<div id="destinations" class="sidebar-section">
+           <!--  <a href="#" id="select-location" class="map-button">Select a Location</a> -->
+           <button id="select-location" class="map-button primary">Select a Location</button>
+            	<div id="destinations-list">
+              		<ul>
+                		<li><a href="UCTR">914 Broadway</a></li>
+               			<li><a href="TB19">924 Broadway</a></li>
+                		<li><a href="TB97">Academic Advising Center: Students in Transition</a></li>
+                		<li><a href="ADEN">Aden Hall</a></li>
+		                <li><a href="ARCE">Administrative and Research Center</a></li>
+		                <li><a href="ANDS">Andrews Hall</a></li>
+		                <li><a href="ARMR">Armory</a></li>
+		                <li><a href="ARNT">Arnett Hall</a></li>
+		                <li><a href="IBS1">Arts and Sciences Finance and Payroll Administration</a></li>
+		                <li><a href="OB1">Arts and Sciences Office Building 1</a></li>
+		                <li><a href="ATCT">Athens Court</a></li>
+		                <li><a href="ATHN">Athens North Court</a></li>
+		                <li><a href="W-AP">Athletics Practice Field</a></li>
+		                <li><a href="BKER">Baker Hall</a></li>
+		                <li><a href="FH">Balch Fieldhouse</a></li>
+		                <li><a href="BCAP">Bear Creek Apartments at Williams Village</a></li>
+		                <li><a href="BESC">Benson Earth Sciences</a></li>
+		                <li><a href="BRKT">Brackett Hall</a></li>
+		                <li><a href="MCOL">Bruce Curtis Building (Museum Collections)</a></li>
+		                <li><a href="BUCK">Buckingham Hall</a></li>
+		                <li><a href="W-BF">Business Field</a></li>
+		                <li><a href="KOBL">Business, Leeds School of Business, BUS</a></li>
+		              </ul>  
+            	</div>
+        </div>
+        
+        <div id="layer-controls" class="sidebar-section">
+<!--           <h2><a href="#overlay-layer-controls" class="section-toggle toggle-show">Map Layers</a></h2>
+          <div id="basemap-layer-controls"></div>
+          <div id="overlay-layer-controls" class="legend-section"></div> -->
+        </div>
+ 
+      <div id="legend" class="sidebar-section">
+	
+      </div> <!-- ./legend -->
+
+
+        <div id="links">
+          <ul>
+            <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+
+            <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
+            <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
+            <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
+            <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
+          </ul>
+        </div>
+
+        <div id="links">
+          <ul>
+            <li><a href="#"><i class="fa fa-arrows fa-fw"></i> Places &amp; Things</a></li>
+
+            <li><a href="#">Bicycle Parking</a></li>
+            <li><a href="#">Drinking Water Stations</a></li>
+            <li><a href="#">Recycling Stations</a></li>
+          </ul>
+        </div>
+
+
+        <div id="footer">
+			<!-- <a href="http://www.colorado.edu"><img src="" alt="University of C" /></a>
+			<p>&copy; Regents of the University of Colorado<br>
+	        <a href="http://www.colorado.edu/about/privacy-statement">Privacy</a> &bull; <a href="http://www.colorado.edu/about/legal-trademarks">Legal &amp; Trademarks</a></p>
+	        <p class="osm-copyright">Powered by <a href="http://leafletjs.com">Leaflet</a> contributors - Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a></p> -->
+        </div>
+      </div><!-- ./sidebar-menu-content -->
+      <div id="sidebar-button"></div>
+ </div><!-- ./sidebar-menu -->
+
+
+<div id="map"></div>
+
+<div id="embed">
+	<h2>Embed Map</h2>
+	<p>Copy and paste the code below to embed this map on your own site:</p>
+	<input type="text" id="embed-code" /> <a href="#" id="close-embed"><i class="fa fa-times-circle"></i></a>
+</div><!-- ./embed -->
+
+
+<!-- the javascript files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+
+<script>
+// $(document).ready(function(){
+// // load the map
+// $.getScript('./js/load-map.js');
+// });
+
+// Set up sidebar
+// $('#sidebar-button, #menu-toggle').click(function(){
+//   if($('#sidebar-menu').css('display') == 'block'){
+//     $('#sidebar-menu, #destinations-list').fadeOut();
+//     $('#sidebar-button').css('background-image', 'url(lib/css/img/right-arrow.png)');
+//   }
+//   else{
+//     $('#sidebar-menu').fadeIn();
+//     $('#sidebar-button').css('background-image', 'url(lib/css/img/left-arrow.png)');
+//   }  
+//   return false;
+// });
+
+// toggle destination list
+// $('#select-location').click(function() {
+//   if ($('#select-location').is(':visible').length) {
+//     $('#destinations-list').hide("slide", {direction: "down"}, 1000);
+//     } else {
+//     $('#destinations-list').show("slide", {direction: "up"}, 1000);
+//     }
+// });
+
+
+$('#select-location').click(function() {
+  if ($('#destinations-list').is(':visible')) {
+    $('#destinations-list').hide(); 
+    } else {
+    $('#destinations-list').show();
+    }
+});
+
+
+$(document).ready(function(){
+  $('#ov-control-buildings').attr('disabled', 'disabled');
+
+  var state;
+
+  $('a.section-toggle').on('click', function() {
+    var showthis = $(this).attr("href");
+    $(this).toggleClass('toggle-show');
+    $(this).toggleClass('toggle-hide');
+    state = !state; 
+    if (state) {
+      $(showthis).slideDown();
+      
+      return false;
+    } else {
+      $(showthis).slideUp();
+      
+      return false;
+    }
+  });
+
+
+//   $("a#embed-link").click(function() {
+//     var mapURL = document.URL + '?embed=true';
+//     var embedCode = '<iframe src="' + mapURL + '" width="600" height="400" scrolling="no" frameborder="0" style="border:0;"></iframe>';
+//     $("#embed-code").val(embedCode);
+//     $("#embed").fadeIn();
+//     return false;
+//   });
+//   $("a#close-embed").click(function() {
+//     $("#embed").fadeOut();
+//     return false;
+//   });
+//   $("a#select-location").click(function(){
+//     $('#destinations-list').fadeIn();
+//     return false;
+//   });
+//   $('html').click(function() {
+//     $('#destinations-list, #embed').fadeOut();
+//     if(window.innerWidth < 800){
+//       $('#sidebar-menu').fadeOut();
+//     }
+//   });
+  
+//   $('#destinations-list, #embed, #sidebar-menu').click(function(event){
+//       event.stopPropagation();
+//   });
+// });
+
+
+// $(function(){
+//   // bind change event to select
+//   $('#destinations-list a').on('click', function () {
+//       var url = $(this).attr('href'); // get selected value
+//       if (url) { // require a URL
+//           //window.location = url; // redirect
+//           if(window.innerWidth < 800){
+//             $('#sidebar-menu').fadeOut();
+//           }
+//           //$("a#select-location").click();
+//           //alert(url);
+//           $('input#search-form-input').val(url);
+//           $('.leaflet-control-geocoder-form button').click();
+//       }
+//       return false;
+//   });
+ });
+
+</script>
+
+<script>
+var map = L.map('map', {
+zoomControl: false,
+center: [-41.2858, 174.78682],
+zoom: 14
+});
+
+mapLink = 
+'<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '&copy; ' + mapLink + ' Contributors',
+maxZoom: 18,
+}).addTo(map);
+new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
+</script>
+</body>
+</html>
