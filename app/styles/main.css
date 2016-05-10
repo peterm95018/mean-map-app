@@ -28,6 +28,13 @@ html, body, .map-container-fluid, .map-row, .col-md-12 {
 	height: 100%;
 }
 
+.navbar {
+  position: relative;
+  min-height: 50px;
+  /* margin-bottom: 20px; */
+  border: 1px solid transparent;
+}
+
 .angular-leaflet-map {
   height: 100%;
   width: 100%;
@@ -35,7 +42,28 @@ html, body, .map-container-fluid, .map-row, .col-md-12 {
   background: #e3e1de;
 }
 
+.legend label,
+.legend span {
+  display:block;
+  float:left;
+  height:15px;
+  width:20%;
+  text-align:center;
+  font-size:9px;
+  color:#808080;
+  background: #fff;
+  }
+  .leaflet-popup-content img {
+    max-width:100%;
+  }
 
+.legend {
+  background: #fff;
+  padding: 10px;
+  width: 280px;
+  border-radius: 4px;
+  opacity: .85;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

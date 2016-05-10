@@ -19,18 +19,16 @@ angular.module('meanMapApp')
         defaults: {
           scrollWheelZoom: false,
           maxZoom: 22
-        },
-        legend: {
-            position: 'topright',
-            colors: [ '#ff0000', '#28c9ff', '#0000ff', '#ecf386' ],
-            labels: [ 'National Cycle Route', 'Regional Cycle Route', 'Local Cycle Network', 'Cycleway' ]
         }
+
+
       });
 
 $scope.map = null;
 
 leafletData.getMap().then(function(map) {
   $scope.map = map;
+  
 
 });
 
@@ -50,11 +48,22 @@ leafletData.getMap().then(function(map) {
       markers.addLayer(geoJsonLayer);
       leafletData.getMap().then(function(map) {
         map.addLayer(markers);
-        map.fitBounds(markers.getBounds());
+        map.fitBounds(markers.getBounds([50, 50]));
 
-
+legend.addTo(map);
       });
   }
+
+var legend = L.control({position: 'topright'});
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'legend');
+  div.innerHTML = '<strong>All-Gender Public Restrooms at UC Santa Cruz</strong>' +
+  '<nav class="legend clearfix">' +
+  'Click a marker for location name and additional information.' + '<br />' +
+  '<small>Source: <a href="#link to source">All-Gender Restrooms List (pdf)</a></small>';
+console.log(div)
+  return div;
+}
 
 
 			

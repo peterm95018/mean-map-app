@@ -30,14 +30,10 @@ angular
         controllerAs: 'main'
       })
       .when('/academic', {
-        templateUrl: 'views/academic.html',
-        controller: 'AcademicCtrl',
-        controllerAs: 'academic'
+        templateUrl: 'views/academic.html'
       })
        .when('/parking', {
-        templateUrl: 'views/parking.html',
-        controller: 'ParkingCtrl',
-        controllerAs: 'parking'
+        templateUrl: 'views/parking.html'
       })
        .when('/filter', {
         templateUrl: 'views/filter.html'
