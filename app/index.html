@@ -102,7 +102,7 @@
 	<div id="sidebar-menu-content">
 		<div id="destinations" class="sidebar-section">
 
-		<button id="select-location" class="btn btn-primary map-button btn-block" type="button" data-toggle="collapse" data-target="#destinations-list" aria-expanded="false" aria-controls="collapseExample">
+		<button id="select-location" class="btn btn-primary map-button btn-block" type="button" data-toggle="collapse" data-target="#destinations-list" aria-expanded="false" aria-controls="destinations-list">
 		  Select a Location
 		</button>
 		<div class="collapse" id="destinations-list">
@@ -135,9 +135,17 @@
 
         </div>
         
-        <div id="layer-controls" class="sidebar-section">
-			<h2>section 2</h2>
-			<p>section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 </p>
+        <div id="show-me" class="sidebar-section">
+			<h2><a href="#"><i class="fa fa-plus-circle"></i> Show Me</a></h2>
+			<div id="show-me-links" class="sidebar-section">
+				<ul>
+					<li><a href="#">Classrooms</a></li>
+					<li><a href="#">Colleges</a></li>
+					<li><a href="#">Departments</a></li>
+					<li><a href="#">Dining</a></li>
+					<li><a href="#">Libraries</a></li>
+				</ul>
+			</div>
         </div>
  
       <div id="legend" class="sidebar-section">
@@ -301,6 +309,14 @@ $(document).ready(function(){
 //       return false;
 //   });
  });
+
+// psm below
+$(function() {
+    $('#show-me h2').click(function() {
+    	alert('got it');
+        $(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
+    });
+});
 
 </script>
 
