@@ -4,7 +4,6 @@
 	<title>MEAN Map App</title>
 
   <meta charset="utf-8">
-    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -133,17 +132,18 @@
         </div>
         
         <div id="layer-controls" class="sidebar-section">
-<!--           <h2><a href="#overlay-layer-controls" class="section-toggle toggle-show">Map Layers</a></h2>
-          <div id="basemap-layer-controls"></div>
-          <div id="overlay-layer-controls" class="legend-section"></div> -->
+			<h2>section 2</h2>
+			<p>section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 section 2 </p>
         </div>
  
       <div id="legend" class="sidebar-section">
-	
+		<h2>section 3</h2>
+		<p>section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 </p>
       </div> <!-- ./legend -->
 
 
-        <div id="links">
+        <div id="links" class="sidebar-section">
+        	<h2>section 4</h2>
           <ul>
             <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
 
@@ -154,7 +154,8 @@
           </ul>
         </div>
 
-        <div id="links">
+        <div id="links" class="sidebar-section">
+        <h2>section 5</h2>
           <ul>
             <li><a href="#"><i class="fa fa-arrows fa-fw"></i> Places &amp; Things</a></li>
 
@@ -166,10 +167,8 @@
 
 
         <div id="footer">
-			<!-- <a href="http://www.colorado.edu"><img src="" alt="University of C" /></a>
-			<p>&copy; Regents of the University of Colorado<br>
-	        <a href="http://www.colorado.edu/about/privacy-statement">Privacy</a> &bull; <a href="http://www.colorado.edu/about/legal-trademarks">Legal &amp; Trademarks</a></p>
-	        <p class="osm-copyright">Powered by <a href="http://leafletjs.com">Leaflet</a> contributors - Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a></p> -->
+			<h2>section 6</h2>
+			<p>i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer i'm a footer </p>
         </div>
       </div><!-- ./sidebar-menu-content -->
       <div id="sidebar-button"></div>
@@ -178,8 +177,9 @@
 
 <div id="map"></div>
 
+<!-- embed uses a bootstrap modal to display the link -->
 <div id="embed">
-	<h2>Embed Map</h2>
+	<h2>Embed Map section 7</h2>
 	<p>Copy and paste the code below to embed this map on your own site:</p>
 	<input type="text" id="embed-code" /> <a href="#" id="close-embed"><i class="fa fa-times-circle"></i></a>
 </div><!-- ./embed -->
@@ -316,5 +316,6 @@ maxZoom: 18,
 }).addTo(map);
 new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
 </script>
+</div>
 </body>
 </html>
