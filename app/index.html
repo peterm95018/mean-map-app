@@ -313,9 +313,15 @@ $(document).ready(function(){
 // psm below
 $(function() {
     $('#show-me h2').click(function() {
-    	alert('got it');
-        $(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
-    });
+    	if ($('#show-me-links').is(':visible')) {
+       	 	$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
+        	$('#show-me-links').fadeOut();
+       	 } else {
+     		$('#show-me-links').fadeIn();
+    		$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');		
+			}
+		});
+    return false;
 });
 
 </script>
