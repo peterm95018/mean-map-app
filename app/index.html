@@ -136,7 +136,7 @@
         </div>
         
         <div id="show-me" class="sidebar-section">
-			<h2><a href="#"><i class="fa fa-plus-circle"></i> Show Me</a></h2>
+			<h2><a href="#"><i class="fa fa-minus-circle"></i> Show Me</a></h2>
 			<div id="show-me-links" class="sidebar-section">
 				<ul>
 					<li><a href="#">Classrooms</a></li>
@@ -314,7 +314,7 @@ $(document).ready(function(){
 $(function() {
     $('#show-me h2').click(function() {
     	if ($('#show-me-links').is(':visible')) {
-       	 	$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
+       	 	$(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
         	$('#show-me-links').fadeOut();
        	 } else {
      		$('#show-me-links').fadeIn();
