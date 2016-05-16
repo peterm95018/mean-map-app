@@ -135,10 +135,10 @@
 
         </div>
         
-        <div id="show-me" class="sidebar-section">
-			<h2><a href="#"><i class="fa fa-minus-circle"></i> Show Me</a></h2>
-			<div id="show-me-links" class="sidebar-section">
-				<ul>
+        <div id="section-2" class="sidebar-section">
+			<h2><a href="#"><i class="fa fa-plus-circle"></i> Show Me</a></h2>
+			<div id="#ucsc-list" class="collapse">
+				<ul class="">
 					<li><a href="#">Classrooms</a></li>
 					<li><a href="#">Colleges</a></li>
 					<li><a href="#">Departments</a></li>
@@ -148,29 +148,36 @@
 			</div>
         </div>
  
-      <div id="legend" class="sidebar-section">
-		<h2>section 3</h2>
-		<p>section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 section 3 </p>
-      </div> <!-- ./legend -->
+		<div id="section-3" class="sidebar-section">
+			<h2><a href="#"><i class="fa fa-plus-circle"></i> Section 3</h2>
+			<div id="section-3-list" class="collapse">
+				<ul class="">
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a hr3f="#">Item 3</a></li>
+				</ul>
+			</div>
+		</div> <!-- ./legend -->
 
+
+	<div id="section-4" class="sidebar-section">
+		<h2><a href="#"><i class="fa fa-plus-circle"></i> Section 4</h2>
+		<div id="section-4-list" class="collapse">
+			<ul>
+				<li><a href="http://www.colorado.edu/about/visiting-campus/directions">
+				<i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+				<li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
+				<li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
+				<li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
+				<li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
+			</ul>
+		</div>
+	</div>
 
         <div id="links" class="sidebar-section">
-        	<h2>section 4</h2>
-          <ul>
-            <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
-
-            <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
-            <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
-            <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
-            <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
-          </ul>
-        </div>
-
-        <div id="links" class="sidebar-section">
-        <h2>section 5</h2>
+        <h2><a href="#"><i class="fa fa-plus-circle"></i> Section 5</h2>
           <ul>
             <li><a href="#"><i class="fa fa-arrows fa-fw"></i> Places &amp; Things</a></li>
-
             <li><a href="#">Bicycle Parking</a></li>
             <li><a href="#">Drinking Water Stations</a></li>
             <li><a href="#">Recycling Stations</a></li>
@@ -311,13 +318,43 @@ $(document).ready(function(){
  });
 
 // psm below
+// Section 2
 $(function() {
-    $('#show-me h2').click(function() {
-    	if ($('#show-me-links').is(':visible')) {
+    $('#section-2 h2').click(function() {
+    	if ($('#section-2-list').is(':visible')) {
        	 	$(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
-        	$('#show-me-links').fadeOut();
+        	$('#section-2-list').fadeOut();
        	 } else {
-     		$('#show-me-links').fadeIn();
+     		$('#section-2-list').fadeIn();
+    		$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');		
+			}
+		});
+    return false;
+});
+
+
+// Section 3
+$(function() {
+    $('#section-3 h2').click(function() {
+    	if ($('#section-3-list').is(':visible')) {
+       	 	$(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+        	$('#section-3-list').fadeOut();
+       	 } else {
+     		$('#section-3-list').fadeIn();
+    		$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');		
+			}
+		});
+    return false;
+});
+
+// Section 4
+$(function() {
+    $('#section-4 h2').click(function() {
+    	if ($('#section-4-list').is(':visible')) {
+       	 	$(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+        	$('#section-4-list').fadeOut();
+       	 } else {
+     		$('#section-4-list').fadeIn();
     		$(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');		
 			}
 		});

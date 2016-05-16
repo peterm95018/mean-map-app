@@ -320,6 +320,35 @@ a.toggle-hide {
   margin:0 0 5px 0;
 }
 
+
+/* psm styles */
+/* LEGENDS */
+#sidebar-menu h2 {
+  margin:0;
+}
+#destinations,
+#legend,
+#layer-controls, 
+#links, 
+#footer {
+  padding:10px;
+}
+.legend-section {
+  border-bottom: 1px solid #d7d7d7;
+  padding:10px 0;
+}
+.legend-section span {
+  padding:0 5px;
+}
+.legend-section ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.legend-section h3 {
+  margin:0 0 5px 0;
+}
+
 /* LINKS/Nav */
 
 #links ul {
@@ -411,7 +440,7 @@ select#bldg {
   margin:10px 0;
   background-color: #fff;
 }
-#destinations-list ul, #destinations-list li{
+#destinations-list ul, #destinations-list li {
   list-style: none;
   margin:0;
   padding:0;
@@ -431,4 +460,57 @@ a.map-button {
   color: #fff;
   background-color: #0082c3;
   text-align: center;
+}
+
+
+/********************* PSM Changes **********************/
+
+/* psm below */
+
+
+#section-2-list, #section-3-list, #section-4-list {
+  display: none;
+  border:1px solid #e7e7e7;
+  margin:10px 0;
+  background-color: #fff;
+}
+
+
+#section-2-list, #section-3-list, #section-4-list ul, 
+#section-2-list, #section-3-list, #section-4-list  li {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+#section-2-list, #section-3-list, #section-4-list a {
+  display: block;
+  padding:20px;
+  font-size:100%;
+  /* border-bottom: 1px solid #e7e7e7; */
+}
+#section-2-list, #section-3-list, #section-4-list ul li:last-child a {
+  border:none;
+}
+
+
+/* gives a white background with margin and border */
+#ucsc-list {
+  display: none;
+  border:1px solid #e7e7e7;
+  margin:10px 0;
+  background-color: #fff;
+}
+
+
+/* LEGENDS */
+#sidebar-menu h2 {
+  margin:0;
+}
+#destinations,
+#section-2,
+#section-3, 
+#section-4
+#links, 
+#footer {
+  padding:10px;
 }
