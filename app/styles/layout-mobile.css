@@ -465,47 +465,9 @@ a.map-button {
 
 /********************* PSM Changes **********************/
 
-/* psm below */
-
-/*
-#section-2-list, #section-3-list, #section-4-list {
-  display: none;
-  border:1px solid #e7e7e7;
-  margin:10px 0;
-  background-color: #fff;
-}
-
-
-#section-2-list, #section-3-list, #section-4-list ul, 
-#section-2-list, #section-3-list, #section-4-list  li {
-  list-style: none;
-  margin:0;
-  padding:0;
-}
-#section-2-list, #section-3-list, #section-4-list a {
-  display: block;
-  padding:20px;
-  font-size:100%;
-  /* border-bottom: 1px solid #e7e7e7; 
-}
-#section-2-list, #section-3-list, #section-4-list ul li:last-child a {
-  border:none;
-}
-*?
-
-/* gives a white background with margin and border */
-/*
-.ucsc-list {
-  display: none;
-  border:1px solid #e7e7e7;
-  margin:10px 0;
-  background-color: #fff;
-}
-*/
-
-/* LEGENDS */
 #sidebar-menu h2 {
   margin:0;
+  font-size: 1.5em;
 }
 #destinations,
 #section-2,
@@ -514,4 +476,12 @@ a.map-button {
 #links, 
 #footer {
   padding:10px;
+}
+
+#academics,
+#parking-list,
+#places-list,
+#printable-maps, ul {
+  list-style: none;
+
 }
