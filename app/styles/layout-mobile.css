@@ -469,19 +469,22 @@ a.map-button {
   margin:0;
   font-size: 1.5em;
 }
-#destinations,
-#section-2,
-#section-3, 
-#section-4
-#links, 
-#footer {
-  padding:10px;
+
+.sidebar-section {
+  padding-bottom: 10px;
 }
 
-#academics,
-#parking-list,
-#places-list,
-#printable-maps, ul {
+#academics ul {
+  margin:0;
+  padding:0;
   list-style: none;
-
 }
+
+#academics a {
+  display: block;
+  padding:10px 10px;
+  border-bottom:1px solid #d7d7d7;
+}
+
+
+
