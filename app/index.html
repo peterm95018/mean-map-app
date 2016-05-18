@@ -172,7 +172,9 @@
         <div id="links">
           <ul>
             <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
-            <li><a href="#embed" id="embed-link"><i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
+            <li><a href="#" data-target="#myModal" data-toggle="modal">
+			
+            <i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
             <li><a href="about/new-map"><i class="fa fa-question-circle fa-fw"></i> About the Map</a></li>
             <li><a href="lib/map.pdf"><i class="fa fa-print fa-fw"></i> Printable Map (pdf)</a></li>
             <li><a href="about/feedback"><i class="fa fa-thumbs-up fa-fw"></i> Feedback</a></li>
@@ -197,6 +199,35 @@
       <input type="text" id="embed-code" /> <a href="#" id="close-embed"><i class="fa fa-times-circle"></i></a>
     </div>
     </div>
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Embed this Map</h4>
+      </div>
+      <div class="modal-body">
+        <p>Copy and paste the URL below to embed this map into your own site.</p>
+        <i class="fa fa-clipboard" aria-hidden="true"></i>
+        <input type="text" size="60" id="embed-code" value="the url is here" /> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <!-- the javascript files -->
@@ -249,6 +280,10 @@ $('#menu-toggle').click(function() {
 	} 
 });
 
+function openModal() {
+	$('#myModal').modal();
+}
+
 
 $(document).ready(function(){
   $('#ov-control-buildings').attr('disabled', 'disabled');
@@ -270,6 +305,8 @@ $(document).ready(function(){
       return false;
     }
   });
+
+
 
 
 //   $("a#embed-link").click(function() {
