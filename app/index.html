@@ -43,7 +43,13 @@
 </head>
 
 
-<body>
+<body ng-app="meanMapApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
 <div id="page">
 <!-- Bootstrap navbar -->
 <div id="header-bar">
@@ -117,14 +123,12 @@
 
         <div id="parking" class="sidebar-section">
         	<h2><a href="#parking-list" class="section-toggle">Parking</h2>
-<!-- 			<div id="parking-list"> -->
 				<ul>
 					<li><a href="#/parking1">parking 1</a></li>
 					<li><a href="#">parking 2</a></li>
 					<li><a href="#">parking 3</a></li>
 					<li><a href="#">parking 4</a></li>
 				</ul>
-<!-- 			</div> -->
         </div>
 
         <div id="places" class="sidebar-section">
@@ -190,7 +194,9 @@
       <div id="sidebar-button"></div> <!-- still not sure if this is relevant. -->
     </div><!-- ./sidebar-menu -->
 
-    <div id="map"></div>
+	<div ng-view=""></div>
+
+    <!-- <div id="map"></div> -->
 
 <!-- embed is a bootstrap modal dialog -->
     <div id="embed">
@@ -221,22 +227,59 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Copy URL</button>
       </div>
     </div>
   </div>
 </div>
 
 
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+ <script>
+   !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+   (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+   r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+   }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-XXXXX-X');
+   ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+<script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+<script src="bower_components/ui-leaflet/dist/ui-leaflet.js"></script>
+<script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+<script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
 
-<!-- the javascript files -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
 
 
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/academic.js"></script>
+<script src="scripts/controllers/parking.js"></script>
+<script src="scripts/controllers/filter.js"></script>
+<script src="scripts/controllers/filtercluster.js"></script>
+<script src="scripts/controllers/markertest.js"></script>
+<!-- endbuild -->
 <script>
 // $(document).ready(function(){
 // // load the map
