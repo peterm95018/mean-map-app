@@ -19,9 +19,11 @@ angular.extend($scope, {
         },
         defaults: {
           scrollWheelZoom: false,
-          maxZoom: 22
+          maxZoom: 22,
+          zoomControlPosition: 'topright'
         }
       });
+
 
 $scope.map = null;
 
@@ -57,6 +59,7 @@ leafletData.getMap().then(function(map) {
 		};
 
 L.control.layers(null, $scope.overlayMaps).addTo($scope.map);
+
   	},
   	
   	function myError(response) {
