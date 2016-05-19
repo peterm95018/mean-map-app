@@ -17,7 +17,8 @@ angular.module('meanMapApp')
             zoom: 15
         },
         defaults: {
-            scrollWheelZoom: false
+            scrollWheelZoom: false,
+            zoomControlPosition: 'topright'
         }
     });
 }]);

@@ -22,7 +22,8 @@ var filters = document.getElementById('filters');
         },
         defaults: {
           scrollWheelZoom: false,
-          maxZoom: 22
+          maxZoom: 22,
+          zoomControlPosition: 'topright'
         },
         layers: {
                     baselayers: {
