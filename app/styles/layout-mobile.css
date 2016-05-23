@@ -486,5 +486,7 @@ a.map-button {
   border-bottom:1px solid #d7d7d7;
 }
 
-
+#static-body {
+	background: #fff;
+}
 

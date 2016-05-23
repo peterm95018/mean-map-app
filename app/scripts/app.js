@@ -44,6 +44,9 @@ angular
         .when('/markertest', {
         templateUrl: 'views/markertest.html'
       })
+      .when('/directions', {
+      	templateUrl: 'views/directions.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -50,6 +50,7 @@
 
     <!-- Add your site or application content here -->
 
+
 <div id="page">
 <!-- Bootstrap navbar -->
 <div id="header-bar">
@@ -65,17 +66,18 @@
           <a class="navbar-brand" href="#/">UC Santa Cruz</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
-        <!--
-          <ul class="nav navbar-nav">
+          <!-- <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;POI List</a></li>
-          </ul>
+          </ul> -->
         </div>
-        --> <!--/.nav-collapse -->
+         <!--/.nav-collapse -->
       </div>
 </nav>
 </div><!-- ./header-bar -->
+
+
 
 <div id="sidebar-menu">
       <div id="sidebar-menu-content">
@@ -124,7 +126,7 @@
         <div id="parking" class="sidebar-section">
         	<h2><a href="#parking-list" class="section-toggle">Parking</h2>
 				<ul>
-					<li><a href="#/parking1">parking 1</a></li>
+					<li><a href="#/parking">parking test</a></li>
 					<li><a href="#">parking 2</a></li>
 					<li><a href="#">parking 3</a></li>
 					<li><a href="#">parking 4</a></li>
@@ -135,9 +137,9 @@
         	<h2><a href="#places-list" class="section-toggle">Places</h2>
 			<div id="places-list">
 				<ul>
-					<li><a href="#">places 1</a></li>
-					<li><a href="#">places 2</a></li>
-					<li><a href="#">places 3</a></li>
+					<li><a href="#/filter">filter test</a></li>
+					<li><a href="#/filtercluster">filtercluster test</a></li>
+					<li><a href="#markertest">marker test</a></li>
 					<li><a href="#">places 4</a></li>
 				</ul>
 			</div>
@@ -175,7 +177,7 @@
 
         <div id="links">
           <ul>
-            <li><a href="http://www.colorado.edu/about/visiting-campus/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
+            <li><a href="#/directions"><i class="fa fa-arrows fa-fw"></i> Directions to Campus</a></li>
             <li><a href="#" data-target="#myModal" data-toggle="modal">
 			
             <i class="fa fa-code fa-fw"></i> Embed this Map</a></li>
@@ -193,6 +195,8 @@
       </div><!-- ./sidebar-menu-content -->
       <div id="sidebar-button"></div> <!-- still not sure if this is relevant. -->
     </div><!-- ./sidebar-menu -->
+
+
 
 	<div ng-view=""></div>
 
@@ -461,5 +465,7 @@ maxZoom: 18,
 new L.Control.Zoom({ position: 'bottomright'}).addTo(map);
 </script>
 </div>
+
+
 </body>
 </html>
