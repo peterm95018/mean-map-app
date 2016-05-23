@@ -11,18 +11,19 @@ angular.module('meanMapApp')
   .controller('ParkingCtrl', [ '$scope', '$http', 'leafletData', 
   	function ($scope, $http, leafletData) {
 		// parking.geojson
-		var vm = this;
-		  
-		vm.center = {
-			lat: 36.9914, 
-			lng: -122.0609,
-			zoom: 14
-		};
 
-		vm.defaults = {
-		  scrollWheelZoom: false,
-		  maxZoom: 22
-		};
+     angular.extend($scope, {
+        center: {
+          lat: 36.9914, 
+          lng: -122.0609,
+          zoom: 14
+        },
+        defaults: {
+          scrollWheelZoom: false,
+          maxZoom: 22,
+          zoomControlPosition: 'topright'
+        }
+      });
 
 		//var map = L.map('map');
 
