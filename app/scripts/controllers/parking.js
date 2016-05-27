@@ -42,33 +42,14 @@ angular.module('meanMapApp')
   			}
   		});
 
-  		// map.fitBounds(allstuff.getBounds(), {
-  		// 	padding: [50, 50]
-  		// });
+  		map.fitBounds(allstuff.getBounds(), {
+  			padding: [50, 50]
+  		});
 
 
-  		// bicycles.addTo(map);
-  		// cafes.addTo(map);
+  		bicycles.addTo(map);
+  		cafes.addTo(map);
 
   	});
-
-  // // Get the countries geojson data
-  // $http.get("data/bicycle-parking-cafe.geojson").success(function(data, status) {
-  //  addGeoJsonLayerWithClustering(data);
-  // });
-
-  // function addGeoJsonLayerWithClustering(data) {
-  //     var markers = L.markerClusterGroup();
-  //     var geoJsonLayer = L.geoJson(data, {
-  //         onEachFeature: function (feature, layer) {
-  //             layer.bindPopup(feature.properties.name);
-  //         }
-  //     });
-  //     markers.addLayer(geoJsonLayer);
-  //     leafletData.getMap().then(function(map) {
-  //       map.addLayer(markers);
-  //       map.fitBounds(markers.getBounds());
-  //     });
-  // }
 
   }]);
