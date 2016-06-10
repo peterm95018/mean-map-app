@@ -93,8 +93,10 @@ h3{ font-size: 15px; }
   position: relative;
   height: 100%;
   overflow: auto;
+  background:rgb(255,255,255);
 
 }
+
 #legend img{
   width:16px;
   height:16px;
@@ -488,8 +490,13 @@ a.map-button {
 
 #static-body {
 	background: #fff;
-  margin-top: 50px;
-  padding-left: 15px;
+	margin-top: 50px;
+	padding-left: 5px;
 }
 
-
+.summary {
+	font-size: 1em;
+	line-height: 1.6;
+	margin-bottom: 1.25em;
+	text-rendering: optimizeLegibility;
+}

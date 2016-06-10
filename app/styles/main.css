@@ -138,4 +138,7 @@ html, body, .map-container-fluid, .map-row, .col-md-12 {
   .jumbotron {
     border-bottom: 0;
   }
+  #static-body {
+  	margin-left: 250px;
+  }
 }
