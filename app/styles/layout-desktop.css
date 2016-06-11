@@ -136,8 +136,7 @@ div.leaflet-top.leaflet-left .leaflet-control-layers-expanded {
   left:0px;
   border-right:1px solid rgba(0,0,0,.25);
   display: block !important;
-    background:rgb(255,255,255);
-  background:rgba(255,255,255,.85);
+  
 }
 #sidebar-button {
   background-image: url(img/left-arrow.png);
