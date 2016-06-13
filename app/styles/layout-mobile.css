@@ -492,6 +492,12 @@ a.map-button {
 	background: #fff;
 	margin-top: 50px;
 	padding-left: 5px;
+  height: 100%;
+}
+
+#static-body-wrapper {
+  position: absolute;
+  height: 100%;
 }
 
 .summary {
