@@ -128,7 +128,8 @@ div.leaflet-top.leaflet-left .leaflet-control-layers-expanded {
 
 #sidebar-menu{
   width: 250px;
-  height: auto;
+  /* height: auto; */
+  height: 100%; /* psm */
   position: absolute;
   bottom: 0px;  
   /* top:120px; */
